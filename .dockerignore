@@ -1,0 +1,7 @@
+node_modules
+dist
+data
+*.zip
+.git
+**/*.local.json
+qbo-export*.json

@@ -1,0 +1,13 @@
+# Optional overlay when Bigcapital runs on the same host with its stock docker-compose:
+#   docker compose -f docker-compose.yml -f docker-compose.bigcapital.yml up -d
+# openpayroll then reaches Bigcapital's API server directly on its docker network (no proxy, no TLS inside the host).
+services:
+  openpayroll:
+    environment:
+      BIGCAPITAL_URL: http://bigcapital-server:3000
+    networks: [default, bigcapital]
+
+networks:
+  bigcapital:
+    external: true
+    name: bigcapital_bigcapital_network

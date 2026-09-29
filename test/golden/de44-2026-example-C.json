@@ -1,0 +1,57 @@
+{
+  "id": "de44-2026-example-C",
+  "source": {
+    "doc": "EDD DE 44 Rev. 52 (4-26), California Employer's Guide 2026",
+    "locator": "Method B - Exact Calculation Method, Example C, PDF page 51 of 132"
+  },
+  "description": "Copied from the worked example. Inputs and expected amount as printed.",
+  "input": {
+    "employer": {
+      "name": "Example",
+      "caUiRate": "0.034"
+    },
+    "employee": {
+      "id": "EX",
+      "name": "Example",
+      "workState": "CA",
+      "w4": {
+        "version": "2020+",
+        "filingStatus": "single",
+        "step2Checkbox": false,
+        "step3Credits": "0",
+        "step4aOtherIncome": "0",
+        "step4bDeductions": "0",
+        "step4cExtra": "0"
+      },
+      "de4": {
+        "filingStatus": "married",
+        "regularAllowances": 5,
+        "estimatedDeductionAllowances": 0,
+        "additional": "0"
+      }
+    },
+    "period": {
+      "frequency": "monthly",
+      "start": "2026-01-01",
+      "end": "2026-01-14",
+      "payDate": "2026-01-16"
+    },
+    "earnings": [
+      {
+        "code": "salary",
+        "amount": "5100.00"
+      }
+    ],
+    "ytd": {
+      "ssWages": "0",
+      "medicareWages": "0",
+      "futaWages": "0",
+      "caUiWages": "0",
+      "caSdiWages": "0"
+    }
+  },
+  "expect": {
+    "ca_pit": "0.82"
+  },
+  "tolerance": "0.00"
+}

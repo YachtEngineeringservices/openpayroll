@@ -1,0 +1,61 @@
+{
+  "employer": {
+    "name": "Example LLC",
+    "caUiRate": "0.034",
+    "caPitMethod": "annualized"
+  },
+  "tolerance": "0.00",
+  "employees": [
+    {
+      "providerEmployeeId": "QUICKBOOKS-EMPLOYEE-ID",
+      "frequency": "semimonthly",
+      "input": {
+        "workState": "CA",
+        "w4": {
+          "version": "2020+",
+          "filingStatus": "single",
+          "step2Checkbox": false,
+          "step3Credits": "0",
+          "step4aOtherIncome": "0",
+          "step4bDeductions": "0",
+          "step4cExtra": "0"
+        },
+        "de4": {
+          "filingStatus": "single",
+          "regularAllowances": 1,
+          "estimatedDeductionAllowances": 0,
+          "additional": "0"
+        }
+      },
+      "salaryPerPeriod": "2500.00"
+    }
+  ],
+  "accounts": {
+    "wagesExpense": 6000,
+    "employerTaxExpense": 6010,
+    "netPay": 1000,
+    "liabilities": {
+      "fit": 2100,
+      "ss_ee": 2110,
+      "ss_er": 2110,
+      "medicare_ee": 2110,
+      "medicare_er": 2110,
+      "addl_medicare_ee": 2110,
+      "futa": 2120,
+      "ca_pit": 2200,
+      "ca_sdi": 2200,
+      "ca_ui": 2210,
+      "ca_ett": 2210
+    }
+  },
+  "bigcapital": {
+    "baseUrl": "https://books.example.ts.net",
+    "apiKey": "bc_REPLACE_ME",
+    "publish": false
+  },
+  "deposits": {
+    "from": "2027-01-01",
+    "notifyTo": "you@example.com",
+    "caSchedule": "monthly"
+  }
+}

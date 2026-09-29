@@ -1,0 +1,2155 @@
+{
+  "jurisdiction": "US-CA",
+  "taxYear": 2026,
+  "effectiveFrom": "2026-01-01",
+  "effectiveTo": "2026-12-31",
+  "status": "draft",
+  "verification": null,
+  "sources": [
+    {
+      "id": "de44-2026",
+      "title": "EDD DE 44, California Employer's Guide (2026), Method B tables and contribution rates",
+      "url": "https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf",
+      "edition": "2026, DE 44 Rev. 52 (4-26); PDF metadata title says 2025 but the cover and every schedule page say 2026"
+    },
+    {
+      "id": "cuic",
+      "title": "California Unemployment Insurance Code secs. 930 (UI taxable wage limit), 976.6 (ETT)",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=UIC"
+    }
+  ],
+  "notes": [
+    "Tables extracted from the official PDF with pdftotext -layout and parsed by script (no manual typing). Values quoted in the Method B worked examples A-F were checked against the parsed tables.",
+    "DRAFT until a human compares each value against the PDF.",
+    "Your own UI rate comes from EDD's annual rate notice (DE 2088) and goes in the employer settings (caUiRate), not here."
+  ],
+  "pit": {
+    "method": "B",
+    "lowIncomeExemption": {
+      "value": {
+        "weekly": {
+          "single": "363",
+          "married_0_1": "363",
+          "married_2plus": "727",
+          "hoh": "727"
+        },
+        "biweekly": {
+          "single": "727",
+          "married_0_1": "727",
+          "married_2plus": "1454",
+          "hoh": "1454"
+        },
+        "semimonthly": {
+          "single": "787",
+          "married_0_1": "787",
+          "married_2plus": "1575",
+          "hoh": "1575"
+        },
+        "monthly": {
+          "single": "1575",
+          "married_0_1": "1575",
+          "married_2plus": "3149",
+          "hoh": "3149"
+        },
+        "quarterly": {
+          "single": "4724",
+          "married_0_1": "4724",
+          "married_2plus": "9448",
+          "hoh": "9448"
+        },
+        "semiannual": {
+          "single": "9448",
+          "married_0_1": "9448",
+          "married_2plus": "18896",
+          "hoh": "18896"
+        },
+        "annual": {
+          "single": "18896",
+          "married_0_1": "18896",
+          "married_2plus": "37791",
+          "hoh": "37791"
+        },
+        "daily": {
+          "single": "73",
+          "married_0_1": "73",
+          "married_2plus": "145",
+          "hoh": "145"
+        }
+      },
+      "ref": {
+        "source": "de44-2026",
+        "locator": "Method B - Table 1: Low Income Exemption Table, PDF page 53 of 132"
+      }
+    },
+    "estimatedDeduction": {
+      "value": {
+        "weekly": {
+          "1": "19",
+          "2": "38",
+          "3": "58",
+          "4": "77",
+          "5": "96",
+          "6": "115",
+          "7": "135",
+          "8": "154",
+          "9": "173",
+          "10": "192",
+          "perAllowance": "19"
+        },
+        "biweekly": {
+          "1": "38",
+          "2": "77",
+          "3": "115",
+          "4": "154",
+          "5": "192",
+          "6": "231",
+          "7": "269",
+          "8": "308",
+          "9": "346",
+          "10": "385",
+          "perAllowance": "38"
+        },
+        "semimonthly": {
+          "1": "42",
+          "2": "83",
+          "3": "125",
+          "4": "167",
+          "5": "208",
+          "6": "250",
+          "7": "292",
+          "8": "333",
+          "9": "375",
+          "10": "417",
+          "perAllowance": "42"
+        },
+        "monthly": {
+          "1": "83",
+          "2": "167",
+          "3": "250",
+          "4": "333",
+          "5": "417",
+          "6": "500",
+          "7": "583",
+          "8": "667",
+          "9": "750",
+          "10": "833",
+          "perAllowance": "83"
+        },
+        "quarterly": {
+          "1": "250",
+          "2": "500",
+          "3": "750",
+          "4": "1000",
+          "5": "1250",
+          "6": "1500",
+          "7": "1750",
+          "8": "2000",
+          "9": "2250",
+          "10": "2500",
+          "perAllowance": "250"
+        },
+        "semiannual": {
+          "1": "500",
+          "2": "1000",
+          "3": "1500",
+          "4": "2000",
+          "5": "2500",
+          "6": "3000",
+          "7": "3500",
+          "8": "4000",
+          "9": "4500",
+          "10": "5000",
+          "perAllowance": "500"
+        },
+        "annual": {
+          "1": "1000",
+          "2": "2000",
+          "3": "3000",
+          "4": "4000",
+          "5": "5000",
+          "6": "6000",
+          "7": "7000",
+          "8": "8000",
+          "9": "9000",
+          "10": "10000",
+          "perAllowance": "1000"
+        },
+        "daily": {
+          "1": "4",
+          "2": "8",
+          "3": "12",
+          "4": "15",
+          "5": "19",
+          "6": "23",
+          "7": "27",
+          "8": "31",
+          "9": "35",
+          "10": "38",
+          "perAllowance": "4"
+        }
+      },
+      "ref": {
+        "source": "de44-2026",
+        "locator": "Method B - Table 2: Estimated Deduction Table, PDF page 53 of 132; perAllowance = 1-allowance amount per footnote 2"
+      }
+    },
+    "standardDeduction": {
+      "value": {
+        "weekly": {
+          "single": "110",
+          "married_0_1": "110",
+          "married_2plus": "219",
+          "hoh": "219"
+        },
+        "biweekly": {
+          "single": "219",
+          "married_0_1": "219",
+          "married_2plus": "439",
+          "hoh": "439"
+        },
+        "semimonthly": {
+          "single": "238",
+          "married_0_1": "238",
+          "married_2plus": "476",
+          "hoh": "476"
+        },
+        "monthly": {
+          "single": "476",
+          "married_0_1": "476",
+          "married_2plus": "951",
+          "hoh": "951"
+        },
+        "quarterly": {
+          "single": "1427",
+          "married_0_1": "1427",
+          "married_2plus": "2853",
+          "hoh": "2853"
+        },
+        "semiannual": {
+          "single": "2853",
+          "married_0_1": "2853",
+          "married_2plus": "5706",
+          "hoh": "5706"
+        },
+        "annual": {
+          "single": "5706",
+          "married_0_1": "5706",
+          "married_2plus": "11412",
+          "hoh": "11412"
+        },
+        "daily": {
+          "single": "22",
+          "married_0_1": "22",
+          "married_2plus": "44",
+          "hoh": "44"
+        }
+      },
+      "ref": {
+        "source": "de44-2026",
+        "locator": "Method B - Table 3: Standard Deduction Table, PDF page 54 of 132"
+      }
+    },
+    "exemptionAllowance": {
+      "value": {
+        "weekly": {
+          "0": "0.00",
+          "1": "3.24",
+          "2": "6.47",
+          "3": "9.71",
+          "4": "12.95",
+          "5": "16.18",
+          "6": "19.42",
+          "7": "22.66",
+          "8": "25.89",
+          "9": "29.13",
+          "10": "32.37",
+          "perAllowance": "3.24"
+        },
+        "biweekly": {
+          "0": "0.00",
+          "1": "6.47",
+          "2": "12.95",
+          "3": "19.42",
+          "4": "25.89",
+          "5": "32.37",
+          "6": "38.84",
+          "7": "45.31",
+          "8": "51.78",
+          "9": "58.26",
+          "10": "64.73",
+          "perAllowance": "6.47"
+        },
+        "semimonthly": {
+          "0": "0.00",
+          "1": "7.01",
+          "2": "14.03",
+          "3": "21.04",
+          "4": "28.05",
+          "5": "35.06",
+          "6": "42.08",
+          "7": "49.09",
+          "8": "56.10",
+          "9": "63.11",
+          "10": "70.13",
+          "perAllowance": "7.01"
+        },
+        "monthly": {
+          "0": "0.00",
+          "1": "14.03",
+          "2": "28.05",
+          "3": "42.08",
+          "4": "56.10",
+          "5": "70.13",
+          "6": "84.15",
+          "7": "98.18",
+          "8": "112.20",
+          "9": "126.23",
+          "10": "140.25",
+          "perAllowance": "14.03"
+        },
+        "quarterly": {
+          "0": "0.00",
+          "1": "42.08",
+          "2": "84.15",
+          "3": "126.23",
+          "4": "168.30",
+          "5": "210.38",
+          "6": "252.45",
+          "7": "294.53",
+          "8": "336.60",
+          "9": "378.68",
+          "10": "420.75",
+          "perAllowance": "42.08"
+        },
+        "semiannual": {
+          "0": "0.00",
+          "1": "84.15",
+          "2": "168.30",
+          "3": "252.45",
+          "4": "336.60",
+          "5": "420.75",
+          "6": "504.90",
+          "7": "589.05",
+          "8": "673.20",
+          "9": "757.35",
+          "10": "841.50",
+          "perAllowance": "84.15"
+        },
+        "annual": {
+          "0": "0.00",
+          "1": "168.30",
+          "2": "336.60",
+          "3": "504.90",
+          "4": "673.20",
+          "5": "841.50",
+          "6": "1009.80",
+          "7": "1178.10",
+          "8": "1346.40",
+          "9": "1514.70",
+          "10": "1683.00",
+          "perAllowance": "168.30"
+        },
+        "daily": {
+          "0": "0.00",
+          "1": "0.65",
+          "2": "1.29",
+          "3": "1.94",
+          "4": "2.59",
+          "5": "3.24",
+          "6": "3.88",
+          "7": "4.53",
+          "8": "5.18",
+          "9": "5.83",
+          "10": "6.47",
+          "perAllowance": "0.65"
+        }
+      },
+      "ref": {
+        "source": "de44-2026",
+        "locator": "Method B - Table 4: Exemption Allowance Table, PDF page 54 of 132; perAllowance = 1-allowance amount per footnote 1"
+      }
+    },
+    "rates": {
+      "value": {
+        "annual": {
+          "single": [
+            {
+              "atLeast": "0",
+              "lessThan": "11079",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "11079",
+              "lessThan": "26264",
+              "base": "121.87",
+              "rate": "0.022",
+              "excessOver": "11079"
+            },
+            {
+              "atLeast": "26264",
+              "lessThan": "41452",
+              "base": "455.94",
+              "rate": "0.044",
+              "excessOver": "26264"
+            },
+            {
+              "atLeast": "41452",
+              "lessThan": "57542",
+              "base": "1124.21",
+              "rate": "0.066",
+              "excessOver": "41452"
+            },
+            {
+              "atLeast": "57542",
+              "lessThan": "72724",
+              "base": "2186.15",
+              "rate": "0.088",
+              "excessOver": "57542"
+            },
+            {
+              "atLeast": "72724",
+              "lessThan": "371479",
+              "base": "3522.17",
+              "rate": "0.1023",
+              "excessOver": "72724"
+            },
+            {
+              "atLeast": "371479",
+              "lessThan": "445771",
+              "base": "34084.81",
+              "rate": "0.1133",
+              "excessOver": "371479"
+            },
+            {
+              "atLeast": "445771",
+              "lessThan": "742953",
+              "base": "42502.09",
+              "rate": "0.1243",
+              "excessOver": "445771"
+            },
+            {
+              "atLeast": "742953",
+              "lessThan": "1000000",
+              "base": "79441.81",
+              "rate": "0.1353",
+              "excessOver": "742953"
+            },
+            {
+              "atLeast": "1000000",
+              "lessThan": null,
+              "base": "114220.27",
+              "rate": "0.1463",
+              "excessOver": "1000000"
+            }
+          ],
+          "married": [
+            {
+              "atLeast": "0",
+              "lessThan": "22158",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "22158",
+              "lessThan": "52528",
+              "base": "243.74",
+              "rate": "0.022",
+              "excessOver": "22158"
+            },
+            {
+              "atLeast": "52528",
+              "lessThan": "82904",
+              "base": "911.88",
+              "rate": "0.044",
+              "excessOver": "52528"
+            },
+            {
+              "atLeast": "82904",
+              "lessThan": "115084",
+              "base": "2248.42",
+              "rate": "0.066",
+              "excessOver": "82904"
+            },
+            {
+              "atLeast": "115084",
+              "lessThan": "145448",
+              "base": "4372.30",
+              "rate": "0.088",
+              "excessOver": "115084"
+            },
+            {
+              "atLeast": "145448",
+              "lessThan": "742958",
+              "base": "7044.33",
+              "rate": "0.1023",
+              "excessOver": "145448"
+            },
+            {
+              "atLeast": "742958",
+              "lessThan": "891542",
+              "base": "68169.60",
+              "rate": "0.1133",
+              "excessOver": "742958"
+            },
+            {
+              "atLeast": "891542",
+              "lessThan": "1000000",
+              "base": "85004.17",
+              "rate": "0.1243",
+              "excessOver": "891542"
+            },
+            {
+              "atLeast": "1000000",
+              "lessThan": "1485906",
+              "base": "98485.50",
+              "rate": "0.1353",
+              "excessOver": "1000000"
+            },
+            {
+              "atLeast": "1485906",
+              "lessThan": null,
+              "base": "164228.58",
+              "rate": "0.1463",
+              "excessOver": "1485906"
+            }
+          ],
+          "hoh": [
+            {
+              "atLeast": "0",
+              "lessThan": "22173",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "22173",
+              "lessThan": "52530",
+              "base": "243.90",
+              "rate": "0.022",
+              "excessOver": "22173"
+            },
+            {
+              "atLeast": "52530",
+              "lessThan": "67716",
+              "base": "911.75",
+              "rate": "0.044",
+              "excessOver": "52530"
+            },
+            {
+              "atLeast": "67716",
+              "lessThan": "83805",
+              "base": "1579.93",
+              "rate": "0.066",
+              "excessOver": "67716"
+            },
+            {
+              "atLeast": "83805",
+              "lessThan": "98990",
+              "base": "2641.80",
+              "rate": "0.088",
+              "excessOver": "83805"
+            },
+            {
+              "atLeast": "98990",
+              "lessThan": "505208",
+              "base": "3978.08",
+              "rate": "0.1023",
+              "excessOver": "98990"
+            },
+            {
+              "atLeast": "505208",
+              "lessThan": "606251",
+              "base": "45534.18",
+              "rate": "0.1133",
+              "excessOver": "505208"
+            },
+            {
+              "atLeast": "606251",
+              "lessThan": "1000000",
+              "base": "56982.35",
+              "rate": "0.1243",
+              "excessOver": "606251"
+            },
+            {
+              "atLeast": "1000000",
+              "lessThan": "1010417",
+              "base": "105925.35",
+              "rate": "0.1353",
+              "excessOver": "1000000"
+            },
+            {
+              "atLeast": "1010417",
+              "lessThan": null,
+              "base": "107334.77",
+              "rate": "0.1463",
+              "excessOver": "1010417"
+            }
+          ]
+        },
+        "daily": {
+          "single": [
+            {
+              "atLeast": "0",
+              "lessThan": "43",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "43",
+              "lessThan": "101",
+              "base": "0.47",
+              "rate": "0.022",
+              "excessOver": "43"
+            },
+            {
+              "atLeast": "101",
+              "lessThan": "159",
+              "base": "1.75",
+              "rate": "0.044",
+              "excessOver": "101"
+            },
+            {
+              "atLeast": "159",
+              "lessThan": "221",
+              "base": "4.30",
+              "rate": "0.066",
+              "excessOver": "159"
+            },
+            {
+              "atLeast": "221",
+              "lessThan": "280",
+              "base": "8.39",
+              "rate": "0.088",
+              "excessOver": "221"
+            },
+            {
+              "atLeast": "280",
+              "lessThan": "1429",
+              "base": "13.58",
+              "rate": "0.1023",
+              "excessOver": "280"
+            },
+            {
+              "atLeast": "1429",
+              "lessThan": "1715",
+              "base": "131.12",
+              "rate": "0.1133",
+              "excessOver": "1429"
+            },
+            {
+              "atLeast": "1715",
+              "lessThan": "2858",
+              "base": "163.52",
+              "rate": "0.1243",
+              "excessOver": "1715"
+            },
+            {
+              "atLeast": "2858",
+              "lessThan": "3846",
+              "base": "305.59",
+              "rate": "0.1353",
+              "excessOver": "2858"
+            },
+            {
+              "atLeast": "3846",
+              "lessThan": null,
+              "base": "439.27",
+              "rate": "0.1463",
+              "excessOver": "3846"
+            }
+          ],
+          "married": [
+            {
+              "atLeast": "0",
+              "lessThan": "86",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "86",
+              "lessThan": "202",
+              "base": "0.95",
+              "rate": "0.022",
+              "excessOver": "86"
+            },
+            {
+              "atLeast": "202",
+              "lessThan": "318",
+              "base": "3.50",
+              "rate": "0.044",
+              "excessOver": "202"
+            },
+            {
+              "atLeast": "318",
+              "lessThan": "442",
+              "base": "8.60",
+              "rate": "0.066",
+              "excessOver": "318"
+            },
+            {
+              "atLeast": "442",
+              "lessThan": "560",
+              "base": "16.78",
+              "rate": "0.088",
+              "excessOver": "442"
+            },
+            {
+              "atLeast": "560",
+              "lessThan": "2858",
+              "base": "27.16",
+              "rate": "0.1023",
+              "excessOver": "560"
+            },
+            {
+              "atLeast": "2858",
+              "lessThan": "3430",
+              "base": "262.25",
+              "rate": "0.1133",
+              "excessOver": "2858"
+            },
+            {
+              "atLeast": "3430",
+              "lessThan": "3846",
+              "base": "327.06",
+              "rate": "0.1243",
+              "excessOver": "3430"
+            },
+            {
+              "atLeast": "3846",
+              "lessThan": "5715",
+              "base": "378.77",
+              "rate": "0.1353",
+              "excessOver": "3846"
+            },
+            {
+              "atLeast": "5715",
+              "lessThan": null,
+              "base": "631.65",
+              "rate": "0.1463",
+              "excessOver": "5715"
+            }
+          ],
+          "hoh": [
+            {
+              "atLeast": "0",
+              "lessThan": "85",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "85",
+              "lessThan": "202",
+              "base": "0.94",
+              "rate": "0.022",
+              "excessOver": "85"
+            },
+            {
+              "atLeast": "202",
+              "lessThan": "260",
+              "base": "3.51",
+              "rate": "0.044",
+              "excessOver": "202"
+            },
+            {
+              "atLeast": "260",
+              "lessThan": "322",
+              "base": "6.06",
+              "rate": "0.066",
+              "excessOver": "260"
+            },
+            {
+              "atLeast": "322",
+              "lessThan": "381",
+              "base": "10.15",
+              "rate": "0.088",
+              "excessOver": "322"
+            },
+            {
+              "atLeast": "381",
+              "lessThan": "1943",
+              "base": "15.34",
+              "rate": "0.1023",
+              "excessOver": "381"
+            },
+            {
+              "atLeast": "1943",
+              "lessThan": "2332",
+              "base": "175.13",
+              "rate": "0.1133",
+              "excessOver": "1943"
+            },
+            {
+              "atLeast": "2332",
+              "lessThan": "3846",
+              "base": "219.20",
+              "rate": "0.1243",
+              "excessOver": "2332"
+            },
+            {
+              "atLeast": "3846",
+              "lessThan": "3886",
+              "base": "407.39",
+              "rate": "0.1353",
+              "excessOver": "3846"
+            },
+            {
+              "atLeast": "3886",
+              "lessThan": null,
+              "base": "412.80",
+              "rate": "0.1463",
+              "excessOver": "3886"
+            }
+          ]
+        },
+        "quarterly": {
+          "single": [
+            {
+              "atLeast": "0",
+              "lessThan": "2770",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "2770",
+              "lessThan": "6566",
+              "base": "30.47",
+              "rate": "0.022",
+              "excessOver": "2770"
+            },
+            {
+              "atLeast": "6566",
+              "lessThan": "10363",
+              "base": "113.98",
+              "rate": "0.044",
+              "excessOver": "6566"
+            },
+            {
+              "atLeast": "10363",
+              "lessThan": "14386",
+              "base": "281.05",
+              "rate": "0.066",
+              "excessOver": "10363"
+            },
+            {
+              "atLeast": "14386",
+              "lessThan": "18181",
+              "base": "546.57",
+              "rate": "0.088",
+              "excessOver": "14386"
+            },
+            {
+              "atLeast": "18181",
+              "lessThan": "92870",
+              "base": "880.53",
+              "rate": "0.1023",
+              "excessOver": "18181"
+            },
+            {
+              "atLeast": "92870",
+              "lessThan": "111443",
+              "base": "8521.21",
+              "rate": "0.1133",
+              "excessOver": "92870"
+            },
+            {
+              "atLeast": "111443",
+              "lessThan": "185738",
+              "base": "10625.53",
+              "rate": "0.1243",
+              "excessOver": "111443"
+            },
+            {
+              "atLeast": "185738",
+              "lessThan": "250000",
+              "base": "19860.40",
+              "rate": "0.1353",
+              "excessOver": "185738"
+            },
+            {
+              "atLeast": "250000",
+              "lessThan": null,
+              "base": "28555.05",
+              "rate": "0.1463",
+              "excessOver": "250000"
+            }
+          ],
+          "married": [
+            {
+              "atLeast": "0",
+              "lessThan": "5540",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "5540",
+              "lessThan": "13132",
+              "base": "60.94",
+              "rate": "0.022",
+              "excessOver": "5540"
+            },
+            {
+              "atLeast": "13132",
+              "lessThan": "20726",
+              "base": "227.96",
+              "rate": "0.044",
+              "excessOver": "13132"
+            },
+            {
+              "atLeast": "20726",
+              "lessThan": "28772",
+              "base": "562.10",
+              "rate": "0.066",
+              "excessOver": "20726"
+            },
+            {
+              "atLeast": "28772",
+              "lessThan": "36362",
+              "base": "1093.14",
+              "rate": "0.088",
+              "excessOver": "28772"
+            },
+            {
+              "atLeast": "36362",
+              "lessThan": "185740",
+              "base": "1761.06",
+              "rate": "0.1023",
+              "excessOver": "36362"
+            },
+            {
+              "atLeast": "185740",
+              "lessThan": "222886",
+              "base": "17042.43",
+              "rate": "0.1133",
+              "excessOver": "185740"
+            },
+            {
+              "atLeast": "222886",
+              "lessThan": "250000",
+              "base": "21251.07",
+              "rate": "0.1243",
+              "excessOver": "222886"
+            },
+            {
+              "atLeast": "250000",
+              "lessThan": "371477",
+              "base": "24621.34",
+              "rate": "0.1353",
+              "excessOver": "250000"
+            },
+            {
+              "atLeast": "371477",
+              "lessThan": null,
+              "base": "41057.18",
+              "rate": "0.1463",
+              "excessOver": "371477"
+            }
+          ],
+          "hoh": [
+            {
+              "atLeast": "0",
+              "lessThan": "5543",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "5543",
+              "lessThan": "13133",
+              "base": "60.97",
+              "rate": "0.022",
+              "excessOver": "5543"
+            },
+            {
+              "atLeast": "13133",
+              "lessThan": "16929",
+              "base": "227.95",
+              "rate": "0.044",
+              "excessOver": "13133"
+            },
+            {
+              "atLeast": "16929",
+              "lessThan": "20951",
+              "base": "394.97",
+              "rate": "0.066",
+              "excessOver": "16929"
+            },
+            {
+              "atLeast": "20951",
+              "lessThan": "24748",
+              "base": "660.42",
+              "rate": "0.088",
+              "excessOver": "20951"
+            },
+            {
+              "atLeast": "24748",
+              "lessThan": "126302",
+              "base": "994.56",
+              "rate": "0.1023",
+              "excessOver": "24748"
+            },
+            {
+              "atLeast": "126302",
+              "lessThan": "151563",
+              "base": "11383.53",
+              "rate": "0.1133",
+              "excessOver": "126302"
+            },
+            {
+              "atLeast": "151563",
+              "lessThan": "250000",
+              "base": "14245.60",
+              "rate": "0.1243",
+              "excessOver": "151563"
+            },
+            {
+              "atLeast": "250000",
+              "lessThan": "252604",
+              "base": "26481.32",
+              "rate": "0.1353",
+              "excessOver": "250000"
+            },
+            {
+              "atLeast": "252604",
+              "lessThan": null,
+              "base": "26833.64",
+              "rate": "0.1463",
+              "excessOver": "252604"
+            }
+          ]
+        },
+        "semiannual": {
+          "single": [
+            {
+              "atLeast": "0",
+              "lessThan": "5540",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "5540",
+              "lessThan": "13132",
+              "base": "60.94",
+              "rate": "0.022",
+              "excessOver": "5540"
+            },
+            {
+              "atLeast": "13132",
+              "lessThan": "20726",
+              "base": "227.96",
+              "rate": "0.044",
+              "excessOver": "13132"
+            },
+            {
+              "atLeast": "20726",
+              "lessThan": "28772",
+              "base": "562.10",
+              "rate": "0.066",
+              "excessOver": "20726"
+            },
+            {
+              "atLeast": "28772",
+              "lessThan": "36362",
+              "base": "1093.14",
+              "rate": "0.088",
+              "excessOver": "28772"
+            },
+            {
+              "atLeast": "36362",
+              "lessThan": "185740",
+              "base": "1761.06",
+              "rate": "0.1023",
+              "excessOver": "36362"
+            },
+            {
+              "atLeast": "185740",
+              "lessThan": "222886",
+              "base": "17042.43",
+              "rate": "0.1133",
+              "excessOver": "185740"
+            },
+            {
+              "atLeast": "222886",
+              "lessThan": "371476",
+              "base": "21251.07",
+              "rate": "0.1243",
+              "excessOver": "222886"
+            },
+            {
+              "atLeast": "371476",
+              "lessThan": "500000",
+              "base": "39720.81",
+              "rate": "0.1353",
+              "excessOver": "371476"
+            },
+            {
+              "atLeast": "500000",
+              "lessThan": null,
+              "base": "57110.11",
+              "rate": "0.1463",
+              "excessOver": "500000"
+            }
+          ],
+          "married": [
+            {
+              "atLeast": "0",
+              "lessThan": "11080",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "11080",
+              "lessThan": "26264",
+              "base": "121.88",
+              "rate": "0.022",
+              "excessOver": "11080"
+            },
+            {
+              "atLeast": "26264",
+              "lessThan": "41452",
+              "base": "455.93",
+              "rate": "0.044",
+              "excessOver": "26264"
+            },
+            {
+              "atLeast": "41452",
+              "lessThan": "57544",
+              "base": "1124.20",
+              "rate": "0.066",
+              "excessOver": "41452"
+            },
+            {
+              "atLeast": "57544",
+              "lessThan": "72724",
+              "base": "2186.27",
+              "rate": "0.088",
+              "excessOver": "57544"
+            },
+            {
+              "atLeast": "72724",
+              "lessThan": "371480",
+              "base": "3522.11",
+              "rate": "0.1023",
+              "excessOver": "72724"
+            },
+            {
+              "atLeast": "371480",
+              "lessThan": "445772",
+              "base": "34084.85",
+              "rate": "0.1133",
+              "excessOver": "371480"
+            },
+            {
+              "atLeast": "445772",
+              "lessThan": "500000",
+              "base": "42502.13",
+              "rate": "0.1243",
+              "excessOver": "445772"
+            },
+            {
+              "atLeast": "500000",
+              "lessThan": "742954",
+              "base": "49242.67",
+              "rate": "0.1353",
+              "excessOver": "500000"
+            },
+            {
+              "atLeast": "742954",
+              "lessThan": null,
+              "base": "82114.35",
+              "rate": "0.1463",
+              "excessOver": "742954"
+            }
+          ],
+          "hoh": [
+            {
+              "atLeast": "0",
+              "lessThan": "11086",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "11086",
+              "lessThan": "26266",
+              "base": "121.95",
+              "rate": "0.022",
+              "excessOver": "11086"
+            },
+            {
+              "atLeast": "26266",
+              "lessThan": "33858",
+              "base": "455.91",
+              "rate": "0.044",
+              "excessOver": "26266"
+            },
+            {
+              "atLeast": "33858",
+              "lessThan": "41902",
+              "base": "789.96",
+              "rate": "0.066",
+              "excessOver": "33858"
+            },
+            {
+              "atLeast": "41902",
+              "lessThan": "49496",
+              "base": "1320.86",
+              "rate": "0.088",
+              "excessOver": "41902"
+            },
+            {
+              "atLeast": "49496",
+              "lessThan": "252604",
+              "base": "1989.13",
+              "rate": "0.1023",
+              "excessOver": "49496"
+            },
+            {
+              "atLeast": "252604",
+              "lessThan": "303126",
+              "base": "22767.08",
+              "rate": "0.1133",
+              "excessOver": "252604"
+            },
+            {
+              "atLeast": "303126",
+              "lessThan": "500000",
+              "base": "28491.22",
+              "rate": "0.1243",
+              "excessOver": "303126"
+            },
+            {
+              "atLeast": "500000",
+              "lessThan": "505208",
+              "base": "52962.66",
+              "rate": "0.1353",
+              "excessOver": "500000"
+            },
+            {
+              "atLeast": "505208",
+              "lessThan": null,
+              "base": "53667.30",
+              "rate": "0.1463",
+              "excessOver": "505208"
+            }
+          ]
+        },
+        "semimonthly": {
+          "single": [
+            {
+              "atLeast": "0",
+              "lessThan": "462",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "462",
+              "lessThan": "1094",
+              "base": "5.08",
+              "rate": "0.022",
+              "excessOver": "462"
+            },
+            {
+              "atLeast": "1094",
+              "lessThan": "1727",
+              "base": "18.98",
+              "rate": "0.044",
+              "excessOver": "1094"
+            },
+            {
+              "atLeast": "1727",
+              "lessThan": "2398",
+              "base": "46.83",
+              "rate": "0.066",
+              "excessOver": "1727"
+            },
+            {
+              "atLeast": "2398",
+              "lessThan": "3030",
+              "base": "91.12",
+              "rate": "0.088",
+              "excessOver": "2398"
+            },
+            {
+              "atLeast": "3030",
+              "lessThan": "15478",
+              "base": "146.74",
+              "rate": "0.1023",
+              "excessOver": "3030"
+            },
+            {
+              "atLeast": "15478",
+              "lessThan": "18574",
+              "base": "1420.17",
+              "rate": "0.1133",
+              "excessOver": "15478"
+            },
+            {
+              "atLeast": "18574",
+              "lessThan": "30956",
+              "base": "1770.95",
+              "rate": "0.1243",
+              "excessOver": "18574"
+            },
+            {
+              "atLeast": "30956",
+              "lessThan": "41667",
+              "base": "3310.03",
+              "rate": "0.1353",
+              "excessOver": "30956"
+            },
+            {
+              "atLeast": "41667",
+              "lessThan": null,
+              "base": "4759.23",
+              "rate": "0.1463",
+              "excessOver": "41667"
+            }
+          ],
+          "married": [
+            {
+              "atLeast": "0",
+              "lessThan": "924",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "924",
+              "lessThan": "2188",
+              "base": "10.16",
+              "rate": "0.022",
+              "excessOver": "924"
+            },
+            {
+              "atLeast": "2188",
+              "lessThan": "3454",
+              "base": "37.97",
+              "rate": "0.044",
+              "excessOver": "2188"
+            },
+            {
+              "atLeast": "3454",
+              "lessThan": "4796",
+              "base": "93.67",
+              "rate": "0.066",
+              "excessOver": "3454"
+            },
+            {
+              "atLeast": "4796",
+              "lessThan": "6060",
+              "base": "182.24",
+              "rate": "0.088",
+              "excessOver": "4796"
+            },
+            {
+              "atLeast": "6060",
+              "lessThan": "30956",
+              "base": "293.47",
+              "rate": "0.1023",
+              "excessOver": "6060"
+            },
+            {
+              "atLeast": "30956",
+              "lessThan": "37148",
+              "base": "2840.33",
+              "rate": "0.1133",
+              "excessOver": "30956"
+            },
+            {
+              "atLeast": "37148",
+              "lessThan": "41667",
+              "base": "3541.88",
+              "rate": "0.1243",
+              "excessOver": "37148"
+            },
+            {
+              "atLeast": "41667",
+              "lessThan": "61913",
+              "base": "4103.59",
+              "rate": "0.1353",
+              "excessOver": "41667"
+            },
+            {
+              "atLeast": "61913",
+              "lessThan": null,
+              "base": "6842.87",
+              "rate": "0.1463",
+              "excessOver": "61913"
+            }
+          ],
+          "hoh": [
+            {
+              "atLeast": "0",
+              "lessThan": "924",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "924",
+              "lessThan": "2189",
+              "base": "10.16",
+              "rate": "0.022",
+              "excessOver": "924"
+            },
+            {
+              "atLeast": "2189",
+              "lessThan": "2822",
+              "base": "37.99",
+              "rate": "0.044",
+              "excessOver": "2189"
+            },
+            {
+              "atLeast": "2822",
+              "lessThan": "3492",
+              "base": "65.84",
+              "rate": "0.066",
+              "excessOver": "2822"
+            },
+            {
+              "atLeast": "3492",
+              "lessThan": "4125",
+              "base": "110.06",
+              "rate": "0.088",
+              "excessOver": "3492"
+            },
+            {
+              "atLeast": "4125",
+              "lessThan": "21050",
+              "base": "165.76",
+              "rate": "0.1023",
+              "excessOver": "4125"
+            },
+            {
+              "atLeast": "21050",
+              "lessThan": "25260",
+              "base": "1897.19",
+              "rate": "0.1133",
+              "excessOver": "21050"
+            },
+            {
+              "atLeast": "25260",
+              "lessThan": "41667",
+              "base": "2374.18",
+              "rate": "0.1243",
+              "excessOver": "25260"
+            },
+            {
+              "atLeast": "41667",
+              "lessThan": "42101",
+              "base": "4413.57",
+              "rate": "0.1353",
+              "excessOver": "41667"
+            },
+            {
+              "atLeast": "42101",
+              "lessThan": null,
+              "base": "4472.29",
+              "rate": "0.1463",
+              "excessOver": "42101"
+            }
+          ]
+        },
+        "monthly": {
+          "single": [
+            {
+              "atLeast": "0",
+              "lessThan": "924",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "924",
+              "lessThan": "2188",
+              "base": "10.16",
+              "rate": "0.022",
+              "excessOver": "924"
+            },
+            {
+              "atLeast": "2188",
+              "lessThan": "3454",
+              "base": "37.97",
+              "rate": "0.044",
+              "excessOver": "2188"
+            },
+            {
+              "atLeast": "3454",
+              "lessThan": "4796",
+              "base": "93.67",
+              "rate": "0.066",
+              "excessOver": "3454"
+            },
+            {
+              "atLeast": "4796",
+              "lessThan": "6060",
+              "base": "182.24",
+              "rate": "0.088",
+              "excessOver": "4796"
+            },
+            {
+              "atLeast": "6060",
+              "lessThan": "30956",
+              "base": "293.47",
+              "rate": "0.1023",
+              "excessOver": "6060"
+            },
+            {
+              "atLeast": "30956",
+              "lessThan": "37148",
+              "base": "2840.33",
+              "rate": "0.1133",
+              "excessOver": "30956"
+            },
+            {
+              "atLeast": "37148",
+              "lessThan": "61912",
+              "base": "3541.88",
+              "rate": "0.1243",
+              "excessOver": "37148"
+            },
+            {
+              "atLeast": "61912",
+              "lessThan": "83334",
+              "base": "6620.05",
+              "rate": "0.1353",
+              "excessOver": "61912"
+            },
+            {
+              "atLeast": "83334",
+              "lessThan": null,
+              "base": "9518.45",
+              "rate": "0.1463",
+              "excessOver": "83334"
+            }
+          ],
+          "married": [
+            {
+              "atLeast": "0",
+              "lessThan": "1848",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "1848",
+              "lessThan": "4376",
+              "base": "20.33",
+              "rate": "0.022",
+              "excessOver": "1848"
+            },
+            {
+              "atLeast": "4376",
+              "lessThan": "6908",
+              "base": "75.95",
+              "rate": "0.044",
+              "excessOver": "4376"
+            },
+            {
+              "atLeast": "6908",
+              "lessThan": "9592",
+              "base": "187.36",
+              "rate": "0.066",
+              "excessOver": "6908"
+            },
+            {
+              "atLeast": "9592",
+              "lessThan": "12120",
+              "base": "364.50",
+              "rate": "0.088",
+              "excessOver": "9592"
+            },
+            {
+              "atLeast": "12120",
+              "lessThan": "61912",
+              "base": "586.96",
+              "rate": "0.1023",
+              "excessOver": "12120"
+            },
+            {
+              "atLeast": "61912",
+              "lessThan": "74296",
+              "base": "5680.68",
+              "rate": "0.1133",
+              "excessOver": "61912"
+            },
+            {
+              "atLeast": "74296",
+              "lessThan": "83334",
+              "base": "7083.79",
+              "rate": "0.1243",
+              "excessOver": "74296"
+            },
+            {
+              "atLeast": "83334",
+              "lessThan": "123826",
+              "base": "8207.21",
+              "rate": "0.1353",
+              "excessOver": "83334"
+            },
+            {
+              "atLeast": "123826",
+              "lessThan": null,
+              "base": "13685.78",
+              "rate": "0.1463",
+              "excessOver": "123826"
+            }
+          ],
+          "hoh": [
+            {
+              "atLeast": "0",
+              "lessThan": "1848",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "1848",
+              "lessThan": "4378",
+              "base": "20.33",
+              "rate": "0.022",
+              "excessOver": "1848"
+            },
+            {
+              "atLeast": "4378",
+              "lessThan": "5644",
+              "base": "75.99",
+              "rate": "0.044",
+              "excessOver": "4378"
+            },
+            {
+              "atLeast": "5644",
+              "lessThan": "6984",
+              "base": "131.69",
+              "rate": "0.066",
+              "excessOver": "5644"
+            },
+            {
+              "atLeast": "6984",
+              "lessThan": "8250",
+              "base": "220.13",
+              "rate": "0.088",
+              "excessOver": "6984"
+            },
+            {
+              "atLeast": "8250",
+              "lessThan": "42100",
+              "base": "331.54",
+              "rate": "0.1023",
+              "excessOver": "8250"
+            },
+            {
+              "atLeast": "42100",
+              "lessThan": "50520",
+              "base": "3794.40",
+              "rate": "0.1133",
+              "excessOver": "42100"
+            },
+            {
+              "atLeast": "50520",
+              "lessThan": "83334",
+              "base": "4748.39",
+              "rate": "0.1243",
+              "excessOver": "50520"
+            },
+            {
+              "atLeast": "83334",
+              "lessThan": "84202",
+              "base": "8827.17",
+              "rate": "0.1353",
+              "excessOver": "83334"
+            },
+            {
+              "atLeast": "84202",
+              "lessThan": null,
+              "base": "8944.61",
+              "rate": "0.1463",
+              "excessOver": "84202"
+            }
+          ]
+        },
+        "weekly": {
+          "single": [
+            {
+              "atLeast": "0",
+              "lessThan": "213",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "213",
+              "lessThan": "505",
+              "base": "2.34",
+              "rate": "0.022",
+              "excessOver": "213"
+            },
+            {
+              "atLeast": "505",
+              "lessThan": "797",
+              "base": "8.76",
+              "rate": "0.044",
+              "excessOver": "505"
+            },
+            {
+              "atLeast": "797",
+              "lessThan": "1107",
+              "base": "21.61",
+              "rate": "0.066",
+              "excessOver": "797"
+            },
+            {
+              "atLeast": "1107",
+              "lessThan": "1399",
+              "base": "42.07",
+              "rate": "0.088",
+              "excessOver": "1107"
+            },
+            {
+              "atLeast": "1399",
+              "lessThan": "7144",
+              "base": "67.77",
+              "rate": "0.1023",
+              "excessOver": "1399"
+            },
+            {
+              "atLeast": "7144",
+              "lessThan": "8573",
+              "base": "655.48",
+              "rate": "0.1133",
+              "excessOver": "7144"
+            },
+            {
+              "atLeast": "8573",
+              "lessThan": "14288",
+              "base": "817.39",
+              "rate": "0.1243",
+              "excessOver": "8573"
+            },
+            {
+              "atLeast": "14288",
+              "lessThan": "19231",
+              "base": "1527.76",
+              "rate": "0.1353",
+              "excessOver": "14288"
+            },
+            {
+              "atLeast": "19231",
+              "lessThan": null,
+              "base": "2196.55",
+              "rate": "0.1463",
+              "excessOver": "19231"
+            }
+          ],
+          "married": [
+            {
+              "atLeast": "0",
+              "lessThan": "426",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "426",
+              "lessThan": "1010",
+              "base": "4.69",
+              "rate": "0.022",
+              "excessOver": "426"
+            },
+            {
+              "atLeast": "1010",
+              "lessThan": "1594",
+              "base": "17.54",
+              "rate": "0.044",
+              "excessOver": "1010"
+            },
+            {
+              "atLeast": "1594",
+              "lessThan": "2214",
+              "base": "43.24",
+              "rate": "0.066",
+              "excessOver": "1594"
+            },
+            {
+              "atLeast": "2214",
+              "lessThan": "2798",
+              "base": "84.16",
+              "rate": "0.088",
+              "excessOver": "2214"
+            },
+            {
+              "atLeast": "2798",
+              "lessThan": "14288",
+              "base": "135.55",
+              "rate": "0.1023",
+              "excessOver": "2798"
+            },
+            {
+              "atLeast": "14288",
+              "lessThan": "17146",
+              "base": "1310.98",
+              "rate": "0.1133",
+              "excessOver": "14288"
+            },
+            {
+              "atLeast": "17146",
+              "lessThan": "19231",
+              "base": "1634.79",
+              "rate": "0.1243",
+              "excessOver": "17146"
+            },
+            {
+              "atLeast": "19231",
+              "lessThan": "28575",
+              "base": "1893.96",
+              "rate": "0.1353",
+              "excessOver": "19231"
+            },
+            {
+              "atLeast": "28575",
+              "lessThan": null,
+              "base": "3158.20",
+              "rate": "0.1463",
+              "excessOver": "28575"
+            }
+          ],
+          "hoh": [
+            {
+              "atLeast": "0",
+              "lessThan": "426",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "426",
+              "lessThan": "1010",
+              "base": "4.69",
+              "rate": "0.022",
+              "excessOver": "426"
+            },
+            {
+              "atLeast": "1010",
+              "lessThan": "1302",
+              "base": "17.54",
+              "rate": "0.044",
+              "excessOver": "1010"
+            },
+            {
+              "atLeast": "1302",
+              "lessThan": "1612",
+              "base": "30.39",
+              "rate": "0.066",
+              "excessOver": "1302"
+            },
+            {
+              "atLeast": "1612",
+              "lessThan": "1904",
+              "base": "50.85",
+              "rate": "0.088",
+              "excessOver": "1612"
+            },
+            {
+              "atLeast": "1904",
+              "lessThan": "9716",
+              "base": "76.55",
+              "rate": "0.1023",
+              "excessOver": "1904"
+            },
+            {
+              "atLeast": "9716",
+              "lessThan": "11659",
+              "base": "875.72",
+              "rate": "0.1133",
+              "excessOver": "9716"
+            },
+            {
+              "atLeast": "11659",
+              "lessThan": "19231",
+              "base": "1095.86",
+              "rate": "0.1243",
+              "excessOver": "11659"
+            },
+            {
+              "atLeast": "19231",
+              "lessThan": "19431",
+              "base": "2037.06",
+              "rate": "0.1353",
+              "excessOver": "19231"
+            },
+            {
+              "atLeast": "19431",
+              "lessThan": null,
+              "base": "2064.12",
+              "rate": "0.1463",
+              "excessOver": "19431"
+            }
+          ]
+        },
+        "biweekly": {
+          "single": [
+            {
+              "atLeast": "0",
+              "lessThan": "426",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "426",
+              "lessThan": "1010",
+              "base": "4.69",
+              "rate": "0.022",
+              "excessOver": "426"
+            },
+            {
+              "atLeast": "1010",
+              "lessThan": "1594",
+              "base": "17.54",
+              "rate": "0.044",
+              "excessOver": "1010"
+            },
+            {
+              "atLeast": "1594",
+              "lessThan": "2214",
+              "base": "43.24",
+              "rate": "0.066",
+              "excessOver": "1594"
+            },
+            {
+              "atLeast": "2214",
+              "lessThan": "2798",
+              "base": "84.16",
+              "rate": "0.088",
+              "excessOver": "2214"
+            },
+            {
+              "atLeast": "2798",
+              "lessThan": "14288",
+              "base": "135.55",
+              "rate": "0.1023",
+              "excessOver": "2798"
+            },
+            {
+              "atLeast": "14288",
+              "lessThan": "17146",
+              "base": "1310.98",
+              "rate": "0.1133",
+              "excessOver": "14288"
+            },
+            {
+              "atLeast": "17146",
+              "lessThan": "28576",
+              "base": "1634.79",
+              "rate": "0.1243",
+              "excessOver": "17146"
+            },
+            {
+              "atLeast": "28576",
+              "lessThan": "38462",
+              "base": "3055.54",
+              "rate": "0.1353",
+              "excessOver": "28576"
+            },
+            {
+              "atLeast": "38462",
+              "lessThan": null,
+              "base": "4393.12",
+              "rate": "0.1463",
+              "excessOver": "38462"
+            }
+          ],
+          "married": [
+            {
+              "atLeast": "0",
+              "lessThan": "852",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "852",
+              "lessThan": "2020",
+              "base": "9.37",
+              "rate": "0.022",
+              "excessOver": "852"
+            },
+            {
+              "atLeast": "2020",
+              "lessThan": "3188",
+              "base": "35.07",
+              "rate": "0.044",
+              "excessOver": "2020"
+            },
+            {
+              "atLeast": "3188",
+              "lessThan": "4428",
+              "base": "86.46",
+              "rate": "0.066",
+              "excessOver": "3188"
+            },
+            {
+              "atLeast": "4428",
+              "lessThan": "5596",
+              "base": "168.30",
+              "rate": "0.088",
+              "excessOver": "4428"
+            },
+            {
+              "atLeast": "5596",
+              "lessThan": "28576",
+              "base": "271.08",
+              "rate": "0.1023",
+              "excessOver": "5596"
+            },
+            {
+              "atLeast": "28576",
+              "lessThan": "34292",
+              "base": "2621.93",
+              "rate": "0.1133",
+              "excessOver": "28576"
+            },
+            {
+              "atLeast": "34292",
+              "lessThan": "38462",
+              "base": "3269.55",
+              "rate": "0.1243",
+              "excessOver": "34292"
+            },
+            {
+              "atLeast": "38462",
+              "lessThan": "57150",
+              "base": "3787.88",
+              "rate": "0.1353",
+              "excessOver": "38462"
+            },
+            {
+              "atLeast": "57150",
+              "lessThan": null,
+              "base": "6316.37",
+              "rate": "0.1463",
+              "excessOver": "57150"
+            }
+          ],
+          "hoh": [
+            {
+              "atLeast": "0",
+              "lessThan": "852",
+              "base": "0.00",
+              "rate": "0.011",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "852",
+              "lessThan": "2020",
+              "base": "9.37",
+              "rate": "0.022",
+              "excessOver": "852"
+            },
+            {
+              "atLeast": "2020",
+              "lessThan": "2604",
+              "base": "35.07",
+              "rate": "0.044",
+              "excessOver": "2020"
+            },
+            {
+              "atLeast": "2604",
+              "lessThan": "3224",
+              "base": "60.77",
+              "rate": "0.066",
+              "excessOver": "2604"
+            },
+            {
+              "atLeast": "3224",
+              "lessThan": "3808",
+              "base": "101.69",
+              "rate": "0.088",
+              "excessOver": "3224"
+            },
+            {
+              "atLeast": "3808",
+              "lessThan": "19432",
+              "base": "153.08",
+              "rate": "0.1023",
+              "excessOver": "3808"
+            },
+            {
+              "atLeast": "19432",
+              "lessThan": "23318",
+              "base": "1751.42",
+              "rate": "0.1133",
+              "excessOver": "19432"
+            },
+            {
+              "atLeast": "23318",
+              "lessThan": "38462",
+              "base": "2191.70",
+              "rate": "0.1243",
+              "excessOver": "23318"
+            },
+            {
+              "atLeast": "38462",
+              "lessThan": "38862",
+              "base": "4074.10",
+              "rate": "0.1353",
+              "excessOver": "38462"
+            },
+            {
+              "atLeast": "38862",
+              "lessThan": null,
+              "base": "4128.22",
+              "rate": "0.1463",
+              "excessOver": "38862"
+            }
+          ]
+        }
+      },
+      "ref": {
+        "source": "de44-2026",
+        "locator": "Method B - Tables 5-28: Tax Rate Tables, PDF pages 55, 56, 57, 58 of 132 (semi-monthly: Tables 17-19, PDF page 57 of 132). DE 44 rows read 'over A but not over B'; stored as atLeast A / lessThan B, identical results because rows are continuous"
+      }
+    }
+  },
+  "sdi": {
+    "value": {
+      "employeeRate": "0.013",
+      "wageBase": null
+    },
+    "ref": {
+      "source": "de44-2026",
+      "locator": "State Payroll Taxes table, PDF page 16 of 132: 'The 2026 SDI withholding rate is 1.3 percent (.013)', taxable wages 'No limit.'"
+    }
+  },
+  "ui": {
+    "value": {
+      "wageBase": "7000",
+      "newEmployerRate": "0.034"
+    },
+    "ref": {
+      "source": "de44-2026",
+      "locator": "State Payroll Taxes table, PDF page 16 of 132: first $7,000 per employee; 'New employer tax rate is 3.4 percent (.034)'"
+    }
+  },
+  "ett": {
+    "value": {
+      "rate": "0.001",
+      "wageBase": "7000"
+    },
+    "ref": {
+      "source": "de44-2026",
+      "locator": "State Payroll Taxes table, PDF page 16 of 132: 0.1 percent (.001), first $7,000"
+    }
+  }
+}

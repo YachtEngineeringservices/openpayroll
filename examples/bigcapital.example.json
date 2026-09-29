@@ -1,0 +1,5 @@
+{
+  "baseUrl": "https://books.example.ts.net",
+  "apiKey": "bc_REPLACE_ME",
+  "publish": false
+}

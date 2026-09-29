@@ -1,0 +1,8 @@
+node_modules/
+dist/
+data/
+*.zip
+# Real pay data and personal config never go in git.
+**/*.local.json
+qbo-export*.json
+config.json

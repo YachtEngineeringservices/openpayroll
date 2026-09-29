@@ -1,0 +1,165 @@
+{
+  "jurisdiction": "US-CA",
+  "taxYear": 2099,
+  "effectiveFrom": "2099-01-01",
+  "effectiveTo": "2099-12-31",
+  "status": "verified",
+  "verification": {
+    "by": "test",
+    "on": "2099-01-01",
+    "method": "synthetic fixture"
+  },
+  "sources": [
+    {
+      "id": "fixture",
+      "title": "SYNTHETIC TEST FIXTURE - NOT REAL TAX DATA",
+      "url": "about:blank"
+    }
+  ],
+  "pit": {
+    "method": "B",
+    "lowIncomeExemption": {
+      "value": {
+        "semimonthly": {
+          "single": "1000",
+          "married_0_1": "1000",
+          "married_2plus": "2000",
+          "hoh": "2000"
+        }
+      },
+      "ref": {
+        "source": "fixture",
+        "locator": "synthetic test data"
+      }
+    },
+    "estimatedDeduction": {
+      "value": {
+        "semimonthly": {
+          "1": "100",
+          "2": "200",
+          "perAllowance": "100"
+        }
+      },
+      "ref": {
+        "source": "fixture",
+        "locator": "synthetic test data"
+      }
+    },
+    "standardDeduction": {
+      "value": {
+        "semimonthly": {
+          "single": "200",
+          "married_0_1": "200",
+          "married_2plus": "400",
+          "hoh": "400"
+        }
+      },
+      "ref": {
+        "source": "fixture",
+        "locator": "synthetic test data"
+      }
+    },
+    "exemptionAllowance": {
+      "value": {
+        "semimonthly": {
+          "0": "0",
+          "1": "5",
+          "2": "10",
+          "perAllowance": "5"
+        }
+      },
+      "ref": {
+        "source": "fixture",
+        "locator": "synthetic test data"
+      }
+    },
+    "rates": {
+      "value": {
+        "semimonthly": {
+          "single": [
+            {
+              "atLeast": "0",
+              "lessThan": "1000",
+              "base": "0",
+              "rate": "0.01",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "1000",
+              "lessThan": null,
+              "base": "10",
+              "rate": "0.02",
+              "excessOver": "1000"
+            }
+          ],
+          "married": [
+            {
+              "atLeast": "0",
+              "lessThan": "2000",
+              "base": "0",
+              "rate": "0.01",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "2000",
+              "lessThan": null,
+              "base": "20",
+              "rate": "0.02",
+              "excessOver": "2000"
+            }
+          ],
+          "hoh": [
+            {
+              "atLeast": "0",
+              "lessThan": "2000",
+              "base": "0",
+              "rate": "0.01",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "2000",
+              "lessThan": null,
+              "base": "20",
+              "rate": "0.02",
+              "excessOver": "2000"
+            }
+          ]
+        }
+      },
+      "ref": {
+        "source": "fixture",
+        "locator": "synthetic test data"
+      }
+    }
+  },
+  "sdi": {
+    "value": {
+      "employeeRate": "0.01",
+      "wageBase": null
+    },
+    "ref": {
+      "source": "fixture",
+      "locator": "synthetic test data"
+    }
+  },
+  "ui": {
+    "value": {
+      "wageBase": "7000",
+      "newEmployerRate": "0.034"
+    },
+    "ref": {
+      "source": "fixture",
+      "locator": "synthetic test data"
+    }
+  },
+  "ett": {
+    "value": {
+      "rate": "0.001",
+      "wageBase": "7000"
+    },
+    "ref": {
+      "source": "fixture",
+      "locator": "synthetic test data"
+    }
+  }
+}

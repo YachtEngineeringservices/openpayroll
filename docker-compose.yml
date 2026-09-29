@@ -1,0 +1,38 @@
+# The app has no login. Publish it on loopback only and reach it over a private network, e.g. with
+#   sudo tailscale serve --bg --https=8444 http://127.0.0.1:8100
+# Never bind it to a public interface.
+name: openpayroll
+
+services:
+  openpayroll:
+    build: .
+    image: openpayroll:local
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8100:8100"
+    # Optional (Compose 2.24+), both root-owned, mode 600:
+    #   openpayroll.env  - deposit reminder email: SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, MAIL_FROM
+    #                      (without it, emails are written to /data/outbox instead)
+    #   bigcapital.env   - BIGCAPITAL_URL and BIGCAPITAL_API_KEY=bc_... (without them nothing is posted)
+    env_file:
+      - path: /etc/openpayroll/openpayroll.env
+        required: false
+      - path: /etc/openpayroll/bigcapital.env
+        required: false
+    volumes:
+      - openpayroll_data:/data
+      # Uncomment to use rules from this checkout without rebuilding the image:
+      # - ./rules:/app/rules:ro
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    # Bigcapital on the same host: join its docker network and use BIGCAPITAL_URL=http://bigcapital-server:3000
+    # (see docker-compose.bigcapital.yml).
+
+volumes:
+  openpayroll_data:
+    name: openpayroll_data

@@ -1,0 +1,19 @@
+name: Test
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build and run the tests (golden tests from agency examples included)
+        run: npm test
+      - name: Validate the tax rule files
+        run: node dist/src/cli.js validate rules

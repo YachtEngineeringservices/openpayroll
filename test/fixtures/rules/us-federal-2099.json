@@ -1,0 +1,254 @@
+{
+  "jurisdiction": "US",
+  "taxYear": 2099,
+  "effectiveFrom": "2099-01-01",
+  "effectiveTo": "2099-12-31",
+  "status": "verified",
+  "verification": {
+    "by": "test",
+    "on": "2099-01-01",
+    "method": "synthetic fixture"
+  },
+  "sources": [
+    {
+      "id": "fixture",
+      "title": "SYNTHETIC TEST FIXTURE - NOT REAL TAX DATA",
+      "url": "about:blank"
+    }
+  ],
+  "notes": [
+    "Fake round numbers so expected results can be checked by hand. Never use for real payroll."
+  ],
+  "payPeriodsPerYear": {
+    "value": {
+      "daily": 260,
+      "weekly": 52,
+      "biweekly": 26,
+      "semimonthly": 24,
+      "monthly": 12,
+      "quarterly": 4,
+      "semiannual": 2,
+      "annual": 1
+    },
+    "ref": {
+      "source": "fixture",
+      "locator": "synthetic test data"
+    }
+  },
+  "fit": {
+    "w4_2020": {
+      "line1gDeduction": {
+        "value": {
+          "mfj": "10000",
+          "other": "5000"
+        },
+        "ref": {
+          "source": "fixture",
+          "locator": "synthetic test data"
+        }
+      },
+      "standard": {
+        "value": {
+          "single": [
+            {
+              "atLeast": "0",
+              "lessThan": "5000",
+              "base": "0",
+              "rate": "0",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "5000",
+              "lessThan": "15000",
+              "base": "0",
+              "rate": "0.10",
+              "excessOver": "5000"
+            },
+            {
+              "atLeast": "15000",
+              "lessThan": null,
+              "base": "1000",
+              "rate": "0.20",
+              "excessOver": "15000"
+            }
+          ],
+          "hoh": [
+            {
+              "atLeast": "0",
+              "lessThan": "5000",
+              "base": "0",
+              "rate": "0",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "5000",
+              "lessThan": "15000",
+              "base": "0",
+              "rate": "0.10",
+              "excessOver": "5000"
+            },
+            {
+              "atLeast": "15000",
+              "lessThan": null,
+              "base": "1000",
+              "rate": "0.20",
+              "excessOver": "15000"
+            }
+          ],
+          "mfj": [
+            {
+              "atLeast": "0",
+              "lessThan": "10000",
+              "base": "0",
+              "rate": "0",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "10000",
+              "lessThan": "30000",
+              "base": "0",
+              "rate": "0.10",
+              "excessOver": "10000"
+            },
+            {
+              "atLeast": "30000",
+              "lessThan": null,
+              "base": "2000",
+              "rate": "0.20",
+              "excessOver": "30000"
+            }
+          ]
+        },
+        "ref": {
+          "source": "fixture",
+          "locator": "synthetic test data"
+        }
+      },
+      "checkbox": {
+        "value": {
+          "single": [
+            {
+              "atLeast": "0",
+              "lessThan": "2500",
+              "base": "0",
+              "rate": "0",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "2500",
+              "lessThan": "7500",
+              "base": "0",
+              "rate": "0.10",
+              "excessOver": "2500"
+            },
+            {
+              "atLeast": "7500",
+              "lessThan": null,
+              "base": "500",
+              "rate": "0.20",
+              "excessOver": "7500"
+            }
+          ],
+          "hoh": [
+            {
+              "atLeast": "0",
+              "lessThan": "2500",
+              "base": "0",
+              "rate": "0",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "2500",
+              "lessThan": "7500",
+              "base": "0",
+              "rate": "0.10",
+              "excessOver": "2500"
+            },
+            {
+              "atLeast": "7500",
+              "lessThan": null,
+              "base": "500",
+              "rate": "0.20",
+              "excessOver": "7500"
+            }
+          ],
+          "mfj": [
+            {
+              "atLeast": "0",
+              "lessThan": "5000",
+              "base": "0",
+              "rate": "0",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "5000",
+              "lessThan": "15000",
+              "base": "0",
+              "rate": "0.10",
+              "excessOver": "5000"
+            },
+            {
+              "atLeast": "15000",
+              "lessThan": null,
+              "base": "1000",
+              "rate": "0.20",
+              "excessOver": "15000"
+            }
+          ]
+        },
+        "ref": {
+          "source": "fixture",
+          "locator": "synthetic test data"
+        }
+      }
+    },
+    "w4_legacy": {
+      "allowanceValue": {
+        "value": "4000",
+        "ref": {
+          "source": "fixture",
+          "locator": "synthetic test data"
+        }
+      }
+    }
+  },
+  "fica": {
+    "socialSecurity": {
+      "value": {
+        "employeeRate": "0.062",
+        "employerRate": "0.062",
+        "wageBase": "100000"
+      },
+      "ref": {
+        "source": "fixture",
+        "locator": "synthetic test data"
+      }
+    },
+    "medicare": {
+      "value": {
+        "employeeRate": "0.0145",
+        "employerRate": "0.0145",
+        "additionalEmployeeRate": "0.009",
+        "additionalThreshold": "200000"
+      },
+      "ref": {
+        "source": "fixture",
+        "locator": "synthetic test data"
+      }
+    }
+  },
+  "futa": {
+    "value": {
+      "grossRate": "0.06",
+      "maxCredit": "0.054",
+      "wageBase": "7000",
+      "creditReductionByState": {
+        "CA": null
+      }
+    },
+    "ref": {
+      "source": "fixture",
+      "locator": "synthetic test data"
+    }
+  }
+}

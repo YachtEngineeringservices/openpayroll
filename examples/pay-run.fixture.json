@@ -1,0 +1,14 @@
+{
+  "employer": { "name": "Example LLC", "caUiRate": "0.034" },
+  "employee": {
+    "id": "owner",
+    "name": "Owner Employee",
+    "workState": "CA",
+    "w4": { "version": "2020+", "filingStatus": "single", "step2Checkbox": false, "step3Credits": "0", "step4aOtherIncome": "0", "step4bDeductions": "0", "step4cExtra": "0" },
+    "de4": { "filingStatus": "single", "regularAllowances": 1, "estimatedDeductionAllowances": 0, "additional": "0" }
+  },
+  "period": { "frequency": "semimonthly", "start": "2099-01-01", "end": "2099-01-15", "payDate": "2099-01-15" },
+  "earnings": [{ "code": "salary", "amount": "5000.00" }],
+  "preTax": [],
+  "ytd": { "ssWages": "0", "medicareWages": "0", "futaWages": "0", "caUiWages": "0", "caSdiWages": "0" }
+}

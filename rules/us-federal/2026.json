@@ -1,0 +1,492 @@
+{
+  "jurisdiction": "US",
+  "taxYear": 2026,
+  "effectiveFrom": "2026-01-01",
+  "effectiveTo": "2026-12-31",
+  "status": "draft",
+  "verification": null,
+  "sources": [
+    {
+      "id": "pub15t-2026",
+      "title": "IRS Publication 15-T, Federal Income Tax Withholding Methods (2026)",
+      "url": "https://www.irs.gov/pub/irs-pdf/p15t.pdf",
+      "edition": "2026 (PDF created 2025-12-03, modified 2025-12-11)"
+    },
+    {
+      "id": "ssa-cola-2026",
+      "title": "SSA 2026 Social Security wage base announcement",
+      "url": "https://www.ssa.gov/oact/cola/cbb.html"
+    },
+    {
+      "id": "irc-3101",
+      "title": "26 U.S.C. 3101 (employee FICA rates; Additional Medicare)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/3101"
+    },
+    {
+      "id": "irc-3102",
+      "title": "26 U.S.C. 3102(f) (Additional Medicare withholding threshold)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/3102"
+    },
+    {
+      "id": "irc-3111",
+      "title": "26 U.S.C. 3111 (employer FICA rates)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/3111"
+    },
+    {
+      "id": "irc-3301-3306",
+      "title": "26 U.S.C. 3301, 3302, 3306(b)(1) (FUTA rate, credit, wage base)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/3301"
+    }
+  ],
+  "notes": [
+    "Tables extracted from the official PDF with pdftotext -layout and parsed by script (no manual typing); see CONTRIBUTING.",
+    "DRAFT until a human compares each value against the PDF and the golden tests from Pub 15-T examples pass.",
+    "FUTA credit reduction for CA is published by DOL in November for the current year; leave null until then."
+  ],
+  "payPeriodsPerYear": {
+    "value": {
+      "daily": 260,
+      "weekly": 52,
+      "biweekly": 26,
+      "semimonthly": 24,
+      "monthly": 12,
+      "quarterly": 4,
+      "semiannual": 2,
+      "annual": 1
+    },
+    "ref": {
+      "source": "pub15t-2026",
+      "locator": "p.10, Worksheet 1A Table 3 (annual = 1 by definition; not listed in Table 3)"
+    }
+  },
+  "fit": {
+    "w4_2020": {
+      "line1gDeduction": {
+        "value": {
+          "mfj": "12900",
+          "other": "8600"
+        },
+        "ref": {
+          "source": "pub15t-2026",
+          "locator": "p.10, Worksheet 1A line 1g"
+        }
+      },
+      "standard": {
+        "value": {
+          "mfj": [
+            {
+              "atLeast": "0",
+              "lessThan": "19300",
+              "base": "0.00",
+              "rate": "0",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "19300",
+              "lessThan": "44100",
+              "base": "0.00",
+              "rate": "0.1",
+              "excessOver": "19300"
+            },
+            {
+              "atLeast": "44100",
+              "lessThan": "120100",
+              "base": "2480.00",
+              "rate": "0.12",
+              "excessOver": "44100"
+            },
+            {
+              "atLeast": "120100",
+              "lessThan": "230700",
+              "base": "11600.00",
+              "rate": "0.22",
+              "excessOver": "120100"
+            },
+            {
+              "atLeast": "230700",
+              "lessThan": "422850",
+              "base": "35932.00",
+              "rate": "0.24",
+              "excessOver": "230700"
+            },
+            {
+              "atLeast": "422850",
+              "lessThan": "531750",
+              "base": "82048.00",
+              "rate": "0.32",
+              "excessOver": "422850"
+            },
+            {
+              "atLeast": "531750",
+              "lessThan": "788000",
+              "base": "116896.00",
+              "rate": "0.35",
+              "excessOver": "531750"
+            },
+            {
+              "atLeast": "788000",
+              "lessThan": null,
+              "base": "206583.50",
+              "rate": "0.37",
+              "excessOver": "788000"
+            }
+          ],
+          "single": [
+            {
+              "atLeast": "0",
+              "lessThan": "7500",
+              "base": "0.00",
+              "rate": "0",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "7500",
+              "lessThan": "19900",
+              "base": "0.00",
+              "rate": "0.1",
+              "excessOver": "7500"
+            },
+            {
+              "atLeast": "19900",
+              "lessThan": "57900",
+              "base": "1240.00",
+              "rate": "0.12",
+              "excessOver": "19900"
+            },
+            {
+              "atLeast": "57900",
+              "lessThan": "113200",
+              "base": "5800.00",
+              "rate": "0.22",
+              "excessOver": "57900"
+            },
+            {
+              "atLeast": "113200",
+              "lessThan": "209275",
+              "base": "17966.00",
+              "rate": "0.24",
+              "excessOver": "113200"
+            },
+            {
+              "atLeast": "209275",
+              "lessThan": "263725",
+              "base": "41024.00",
+              "rate": "0.32",
+              "excessOver": "209275"
+            },
+            {
+              "atLeast": "263725",
+              "lessThan": "648100",
+              "base": "58448.00",
+              "rate": "0.35",
+              "excessOver": "263725"
+            },
+            {
+              "atLeast": "648100",
+              "lessThan": null,
+              "base": "192979.25",
+              "rate": "0.37",
+              "excessOver": "648100"
+            }
+          ],
+          "hoh": [
+            {
+              "atLeast": "0",
+              "lessThan": "15550",
+              "base": "0.00",
+              "rate": "0",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "15550",
+              "lessThan": "33250",
+              "base": "0.00",
+              "rate": "0.1",
+              "excessOver": "15550"
+            },
+            {
+              "atLeast": "33250",
+              "lessThan": "83000",
+              "base": "1770.00",
+              "rate": "0.12",
+              "excessOver": "33250"
+            },
+            {
+              "atLeast": "83000",
+              "lessThan": "121250",
+              "base": "7740.00",
+              "rate": "0.22",
+              "excessOver": "83000"
+            },
+            {
+              "atLeast": "121250",
+              "lessThan": "217300",
+              "base": "16155.00",
+              "rate": "0.24",
+              "excessOver": "121250"
+            },
+            {
+              "atLeast": "217300",
+              "lessThan": "271750",
+              "base": "39207.00",
+              "rate": "0.32",
+              "excessOver": "217300"
+            },
+            {
+              "atLeast": "271750",
+              "lessThan": "656150",
+              "base": "56631.00",
+              "rate": "0.35",
+              "excessOver": "271750"
+            },
+            {
+              "atLeast": "656150",
+              "lessThan": null,
+              "base": "191171.00",
+              "rate": "0.37",
+              "excessOver": "656150"
+            }
+          ]
+        },
+        "ref": {
+          "source": "pub15t-2026",
+          "locator": "p.12, 2026 Percentage Method Tables for Automated Payroll Systems, STANDARD Withholding Rate Schedules"
+        }
+      },
+      "checkbox": {
+        "value": {
+          "mfj": [
+            {
+              "atLeast": "0",
+              "lessThan": "16100",
+              "base": "0.00",
+              "rate": "0",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "16100",
+              "lessThan": "28500",
+              "base": "0.00",
+              "rate": "0.1",
+              "excessOver": "16100"
+            },
+            {
+              "atLeast": "28500",
+              "lessThan": "66500",
+              "base": "1240.00",
+              "rate": "0.12",
+              "excessOver": "28500"
+            },
+            {
+              "atLeast": "66500",
+              "lessThan": "121800",
+              "base": "5800.00",
+              "rate": "0.22",
+              "excessOver": "66500"
+            },
+            {
+              "atLeast": "121800",
+              "lessThan": "217875",
+              "base": "17966.00",
+              "rate": "0.24",
+              "excessOver": "121800"
+            },
+            {
+              "atLeast": "217875",
+              "lessThan": "272325",
+              "base": "41024.00",
+              "rate": "0.32",
+              "excessOver": "217875"
+            },
+            {
+              "atLeast": "272325",
+              "lessThan": "400450",
+              "base": "58448.00",
+              "rate": "0.35",
+              "excessOver": "272325"
+            },
+            {
+              "atLeast": "400450",
+              "lessThan": null,
+              "base": "103291.75",
+              "rate": "0.37",
+              "excessOver": "400450"
+            }
+          ],
+          "single": [
+            {
+              "atLeast": "0",
+              "lessThan": "8050",
+              "base": "0.00",
+              "rate": "0",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "8050",
+              "lessThan": "14250",
+              "base": "0.00",
+              "rate": "0.1",
+              "excessOver": "8050"
+            },
+            {
+              "atLeast": "14250",
+              "lessThan": "33250",
+              "base": "620.00",
+              "rate": "0.12",
+              "excessOver": "14250"
+            },
+            {
+              "atLeast": "33250",
+              "lessThan": "60900",
+              "base": "2900.00",
+              "rate": "0.22",
+              "excessOver": "33250"
+            },
+            {
+              "atLeast": "60900",
+              "lessThan": "108938",
+              "base": "8983.00",
+              "rate": "0.24",
+              "excessOver": "60900"
+            },
+            {
+              "atLeast": "108938",
+              "lessThan": "136163",
+              "base": "20512.00",
+              "rate": "0.32",
+              "excessOver": "108938"
+            },
+            {
+              "atLeast": "136163",
+              "lessThan": "328350",
+              "base": "29224.00",
+              "rate": "0.35",
+              "excessOver": "136163"
+            },
+            {
+              "atLeast": "328350",
+              "lessThan": null,
+              "base": "96489.63",
+              "rate": "0.37",
+              "excessOver": "328350"
+            }
+          ],
+          "hoh": [
+            {
+              "atLeast": "0",
+              "lessThan": "12075",
+              "base": "0.00",
+              "rate": "0",
+              "excessOver": "0"
+            },
+            {
+              "atLeast": "12075",
+              "lessThan": "20925",
+              "base": "0.00",
+              "rate": "0.1",
+              "excessOver": "12075"
+            },
+            {
+              "atLeast": "20925",
+              "lessThan": "45800",
+              "base": "885.00",
+              "rate": "0.12",
+              "excessOver": "20925"
+            },
+            {
+              "atLeast": "45800",
+              "lessThan": "64925",
+              "base": "3870.00",
+              "rate": "0.22",
+              "excessOver": "45800"
+            },
+            {
+              "atLeast": "64925",
+              "lessThan": "112950",
+              "base": "8077.50",
+              "rate": "0.24",
+              "excessOver": "64925"
+            },
+            {
+              "atLeast": "112950",
+              "lessThan": "140175",
+              "base": "19603.50",
+              "rate": "0.32",
+              "excessOver": "112950"
+            },
+            {
+              "atLeast": "140175",
+              "lessThan": "332375",
+              "base": "28315.50",
+              "rate": "0.35",
+              "excessOver": "140175"
+            },
+            {
+              "atLeast": "332375",
+              "lessThan": null,
+              "base": "95585.50",
+              "rate": "0.37",
+              "excessOver": "332375"
+            }
+          ]
+        },
+        "ref": {
+          "source": "pub15t-2026",
+          "locator": "p.12, 2026 Percentage Method Tables for Automated Payroll Systems, Form W-4, Step 2, Checkbox, Withholding Rate Schedules"
+        },
+        "continuityTolerance": {
+          "amount": "0.20",
+          "reason": "As printed on p.12, the Single checkbox rows starting at $108,938 and $328,350 have bases $20,512.00 and $96,489.63, $0.12 and $0.18 away from what the preceding rows imply. Each printed Single checkbox base is half the STANDARD Single base, and each bracket width is half the STANDARD width rounded to whole dollars (e.g. 96,075 / 2 = 48,037.50 -> 48,038); that rounding in the source produces the gap. The printed values are used."
+        }
+      }
+    },
+    "w4_legacy": {
+      "allowanceValue": {
+        "value": "4300",
+        "ref": {
+          "source": "pub15t-2026",
+          "locator": "p.10, Worksheet 1A line 1k"
+        }
+      }
+    }
+  },
+  "fica": {
+    "socialSecurity": {
+      "value": {
+        "employeeRate": "0.062",
+        "employerRate": "0.062",
+        "wageBase": "184500"
+      },
+      "ref": {
+        "source": "irc-3101",
+        "locator": "rates 3101(a), 3111(a); wage base $184,500 from ssa-cola-2026 (contribution and benefit base table, 2026 row, read 2026-09-27)"
+      }
+    },
+    "medicare": {
+      "value": {
+        "employeeRate": "0.0145",
+        "employerRate": "0.0145",
+        "additionalEmployeeRate": "0.009",
+        "additionalThreshold": "200000"
+      },
+      "ref": {
+        "source": "irc-3101",
+        "locator": "3101(b)(1),(b)(2), 3111(b); threshold 3102(f)(1)"
+      }
+    }
+  },
+  "futa": {
+    "value": {
+      "grossRate": "0.06",
+      "maxCredit": "0.054",
+      "wageBase": "7000",
+      "creditReductionByState": {
+        "CA": null
+      }
+    },
+    "ref": {
+      "source": "irc-3301-3306",
+      "locator": "3301 (6.0%), 3302(a),(b) (credit up to 5.4%), 3306(b)(1) ($7,000)"
+    }
+  }
+}
